@@ -1,4 +1,12 @@
 PersonalWebsite::Application.routes.draw do
+
+  match '/contact', to: 'static_pages#contact'
+  match '/why', to: 'static_pages#why_this_website'
+  match '/challenges', to: 'static_pages#challenges'
+  match '/about', to: 'static_pages#about_me'
+
+  root to: 'static_pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
