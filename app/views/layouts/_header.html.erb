@@ -1,5 +1,5 @@
 <header>
-  <div id="pictures"><%= link_to my_pic('me1.jpg'), about_path %> +</div>
+  <div id="pictures"><%= link_to my_pic('me1.jpg'), about_path %><span style="font-size: 50px">+</span> <%= image_tag 'question.png', alt:'Company logo', title: 'Your company', class: 'frame_picture', id: 'company_pic' %></div>
   <nav class="rounded">
     <ul>
       <li> <%= link_to 'Home', root_path,class: 'active' %> </li>
